@@ -1,0 +1,42 @@
+.footer {
+    background-color: #3f3f3f;
+    color: var(--primary-color);
+    padding: 1rem 2rem; /* Réduit le padding */
+    text-align: center;
+    margin-top: auto; /* Pousse le footer en bas */
+
+    .footer-content {
+        max-width: 800px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 1.5em; /* Taille de police réduite */
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+            font-size: 0.9em; /* Taille de police réduite */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 0;
+
+            li a {
+                color: var(--primary-color);
+                text-decoration: none;
+                transition: color 0.3s;
+                font-size: 1em; /* Taille de police ajustée */
+
+                &:hover {
+                    color: #0097a7;
+                }
+            }
+        }
+    }
+}

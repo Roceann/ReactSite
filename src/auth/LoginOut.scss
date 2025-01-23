@@ -1,0 +1,39 @@
+.login-form {
+    display: flex;
+    flex-direction: row; /* Afficher les éléments en ligne */
+    gap: 1rem;
+    background-color: #2a2a2a;
+    padding: 0.5rem 1rem; /* Réduire le padding pour s'adapter au header */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #00bcd4;
+    align-items: center; /* Centrer verticalement les éléments */
+  }
+  
+  .login-input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #00bcd4;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  .login-input::placeholder {
+    color: #00bcd4;
+  }
+  
+  .login-button, .logout-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #00bcd4;
+    color: #1a1a1a;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover, .logout-button:hover {
+    background-color: #0097a7;
+  }
