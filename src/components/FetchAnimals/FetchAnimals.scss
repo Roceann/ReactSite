@@ -3,19 +3,21 @@
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  align-items: stretch; // Ajouté pour aligner les éléments enfants
 }
 
 .chien__item {
   border: 1px solid #00bcd4;
   border-radius: 8px;
   overflow: hidden;
-  width: 220px; // Augmenté pour inclure la section de commentaires
+  width: 220px;
   position: relative;
   background-color: #1a1a1a;
   color: #00bcd4;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between; // Ajouté pour étirer les éléments enfants
 }
 
 .card-container {
@@ -47,13 +49,17 @@
   padding: 1em;
   box-sizing: border-box;
   overflow-y: auto;
-  font-size: 0.8em; // Diminuer la taille du texte
+  font-size: 0.8em;
 }
 
 .comment-section {
-  width: 90%; // Ajusté pour s'adapter au conteneur parent
+  width: 90%;
   padding: 0.4rem;
-  background-color: #1a1a1a; // Changé pour un fond sombre
-  border-top: 1px solid #444; // Adapté au thème sombre
+  background-color: #1a1a1a;
+  border-top: 1px solid #444;
   margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }

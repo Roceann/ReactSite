@@ -31,7 +31,7 @@ export default function FetchAnimals() {
                           className="imageChien"
                         />
                       )}
-                      <p>Élevé pour : {chien.bred_for}</p>
+                      {chien.bred_for && <p>Elever pour : {chien.bred_for}</p>}
                       <div className="chien-info">
                         <p>Nom : {chien.name}</p>
                         {chien.country_code && <p>Country code : {chien.country_code}</p>}
